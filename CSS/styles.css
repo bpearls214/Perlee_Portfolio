@@ -1,4 +1,4 @@
-/*Colors used
+/* Colors used
 Background color (snow): #FFFCFC
 Text color (Black): #000
 Heading/Primary Color (Midnight Green): #074f57
@@ -11,12 +11,12 @@ Fourth Color (Purple Taupe): #51344D
 
 :root {
   --primary-color: #074f57;
-  --secondary-color: #33658A;
-  --third-color: #51344D;
-  --fourth-color: #F87060;
-  --bg-color: #FFFCFC;
+  --secondary-color: #33658a;
+  --third-color: #51344d;
+  --fourth-color: #f87060;
+  --bg-color: #fffcfc;
   --link-color: #0b7e8b;
-  --link-visited: #33658A;
+  --link-visited: #33658a;
   --link-active: #0b7e8b;
   --grid-bg: rgba(51, 101, 138, 0.2);
 }
@@ -43,7 +43,7 @@ body {
   border-radius: 5px;
   font-family: monospace;
   color: var(--bg-color);
-  background-color: var(--fourth-color)
+  background-color: var(--fourth-color);
 }
 
 /* --divs-- */
@@ -53,7 +53,7 @@ div {
   margin: 10px;
 }
 
-/* ==Header==*/
+/* ==Header== */
 
 .page-header {
   display: flex;
@@ -70,7 +70,7 @@ div {
   text-align: right;
 }
 
-/* --Navigation--*/
+/* --Navigation-- */
 
 .navigation-list__link--active {
   text-decoration: none;
@@ -85,24 +85,24 @@ div {
   margin-left: 15px;
 }
 
-/* --Footer--*/
+/* --Footer-- */
 
-.page-footer{
+.page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-/* --headings--*/
+/* --headings-- */
 
-h1, h2, h3{
+h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color: var(--primary-color);
 }
 
-/*--links--*/
+/* --links-- */
 
 a {
   color: var(--link-color);
@@ -113,15 +113,15 @@ a:visited {
 }
 
 a:hover, a:focus {
-  /*no underlining when hovering over a link */
+  /* no underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:active {
-  color:var(--link-active);
+  color: var(--link-active);
 }
 
-/*--Buttons--*/
+/* --Buttons-- */
 
 button, .button, .button:visited {
   border: none;
@@ -146,7 +146,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   color: white;
 }
 
-input, texture, select, button {
+input, select, button {
   font-family: inherit;
 }
 
@@ -157,19 +157,19 @@ input, texture, select, button {
   margin: 0 auto;
 }
 
-.profile__portrait{
+.profile__portrait {
   float: left;
   width: 250px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .profile__text {
-  flex:1 1 100px;
+  flex: 1 1 100px;
 }
 
-/* --About Page--*/
+/* --About Page-- */
 
 .about__text, .contact__text, .boston-animation {
   max-width: 700px;
@@ -180,16 +180,16 @@ input, texture, select, button {
 .CV_download {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
-/*--Contact Page--*/
+/* --Contact Page-- */
 
 #contact-form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 /* --Work Page-- */
@@ -198,14 +198,14 @@ input, texture, select, button {
 
 .grid__item {
   display: inline-block;
-  Width: 33%
+  width: 33%;
 }
 
 /* CSS Grid Styling */
 
 .grid {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
 }
 
@@ -213,17 +213,17 @@ input, texture, select, button {
   background-color: var(--grid-bg);
   border-radius: 10px;
   padding: 10px;
-  width: auto
+  width: auto;
 }
 
 .grid__item:last-child {
   grid-column: 3/3;
-  grid-row: 1/3
+  grid-row: 1/3;
 }
 
-#long-box{
+#long-box {
   grid-column: 1/4;
-  grid-row: 3/3
+  grid-row: 3/3;
 }
 
 /* Media Queries */
@@ -240,19 +240,23 @@ input, texture, select, button {
   }
 }
 
-@media all and (max-width: 750px){
-  /* shared code*/
+/* shared code */
+
+@media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   #long-box {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -264,6 +268,7 @@ input, texture, select, button {
   from {
     transform: translate(790px, 965px);
   }
+
   to {
     transform: translate(1400px, 965px);
   }
@@ -274,15 +279,16 @@ input, texture, select, button {
 }
 
 #Sun-2 {
-        transform-origin: 252px 230px;
-        -webkit-animation: rotation 60s infinite linear;
-    }
+  transform-origin: 252px 230px;
+  -webkit-animation: rotation 60s infinite linear;
+}
 
 @-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
+  from {
+    -webkit-transform: rotate(0deg);
   }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
