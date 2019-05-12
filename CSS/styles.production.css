@@ -1,3 +1,14 @@
+/*Colors used
+Background color (snow): #FFFCFC
+Text color (Black): #000
+Heading/Primary Color (Midnight Green): #074f57
+Secondary Color(Teal Blue): #33658A
+Third Color (Bittersweet): #f87060
+Fourth Color (Purple Taupe): #51344D
+*/
+
+/* ====Global=== */
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -212,6 +223,18 @@ input, texture, select, button {
   padding-left: 10px;
 }
 
+.CV_download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center
+}
+
 /*--Contact Page--*/
 
 #contact-form {
@@ -345,4 +368,4 @@ input, texture, select, button {
 		to {
 				-webkit-transform: rotate(359deg);
 		}
-	}
+  }

@@ -177,6 +177,12 @@ input, texture, select, button {
   padding-left: 10px;
 }
 
+.CV_download {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
 /*--Contact Page--*/
 
 #contact-form {
@@ -279,4 +285,4 @@ input, texture, select, button {
 		to {
 				-webkit-transform: rotate(359deg);
 		}
-  }  
+  }
