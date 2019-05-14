@@ -1,10 +1,10 @@
 /* Colors used
-Background color (snow): #FFFCFC
+Background color (snow): #fffcfc
 Text color (Black): #000
 Heading/Primary Color (Midnight Green): #074f57
-Secondary Color(Teal Blue): #33658A
+Secondary Color(Teal Blue): #33658a
 Third Color (Bittersweet): #f87060
-Fourth Color (Purple Taupe): #51344D
+Fourth Color (Purple Taupe): #51344d
 */
 
 /* ====Global=== */
@@ -117,7 +117,7 @@ h3 {
 /* --links-- */
 
 a {
-  color: #0b7e8b;
+  color: #f87060;
 }
 
 a:visited {
@@ -130,7 +130,7 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: #0b7e8b;
+  color: #33658a;
 }
 
 /* --Buttons-- */
@@ -166,6 +166,21 @@ button {
 }
 
 .button:visited {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #33658a;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+#message-button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -249,6 +264,29 @@ input, select, button {
   padding-top: 50px;
 }
 
+.input-box {
+  display: block;
+  padding: 1px;
+  border: 1px solid;
+  color: #33658a;
+  border-radius: 1%;
+}
+
+#message-button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #33658a;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
 /* --Work Page-- */
 
 /* Grid Fallback */
@@ -326,6 +364,42 @@ input, select, button {
 
   h1 {
     font-size: 22px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .grid {
+    -ms-grid-column: auto auto;
+    -ms-grid-row: auto auto;
+  }
+
+  #grid__item_2 {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  #grid__item_3 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+
+  #grid__item_4 {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 3;
+  }
+
+  .grid__item:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+
+  #long-box {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 3;
   }
 }
 

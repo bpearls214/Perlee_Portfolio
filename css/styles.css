@@ -1,10 +1,10 @@
 /* Colors used
-Background color (snow): #FFFCFC
+Background color (snow): #fffcfc
 Text color (Black): #000
 Heading/Primary Color (Midnight Green): #074f57
-Secondary Color(Teal Blue): #33658A
+Secondary Color(Teal Blue): #33658a
 Third Color (Bittersweet): #f87060
-Fourth Color (Purple Taupe): #51344D
+Fourth Color (Purple Taupe): #51344d
 */
 
 /* ====Global=== */
@@ -15,9 +15,9 @@ Fourth Color (Purple Taupe): #51344D
   --third-color: #51344d;
   --fourth-color: #f87060;
   --bg-color: #fffcfc;
-  --link-color: #0b7e8b;
+  --link-color: #f87060;
   --link-visited: #33658a;
-  --link-active: #0b7e8b;
+  --link-active: #33658a;
   --grid-bg: rgba(51, 101, 138, 0.2);
 }
 
@@ -123,7 +123,7 @@ a:active {
 
 /* --Buttons-- */
 
-button, .button, .button:visited {
+button, .button, .button:visited, #message-button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -190,6 +190,27 @@ input, select, button {
   flex-direction: column;
   max-width: 400px;
   padding-top: 50px;
+}
+
+.input-box {
+  display: block;
+  padding: 1px;
+  border: 1px solid;
+  color: var(--secondary-color);
+  border-radius: 1%;
+}
+
+#message-button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
 }
 
 /* --Work Page-- */
@@ -259,6 +280,34 @@ input, select, button {
 
   h1 {
     font-size: 22px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  #grid__item_2 {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+  }
+
+  #grid__item_3 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+
+  #grid__item_4 {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+  }
+
+  .grid__item:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+
+  #long-box {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
   }
 }
 
