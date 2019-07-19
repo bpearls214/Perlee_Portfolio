@@ -270,6 +270,7 @@ input, select, button {
   border: 1px solid;
   color: #33658a;
   border-radius: 1%;
+  margin-bottom: 10px;
 }
 
 #message-button {
@@ -285,6 +286,16 @@ input, select, button {
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+}
+
+label {
+  display: inline-block;
+  min-width: 75px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
 
 /* --Work Page-- */
